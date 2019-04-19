@@ -12,6 +12,6 @@ docker push paedelm/multi-worker:$SHA
 
 kubectl apply -f k8s
 
-kubectl set image deployments/client-deployment client=paedelm/multiclient:$SHA
-kubectl set image deployments/server-deployment server=paedelm/multiserver:$SHA
-kubectl set image deployments/worker-deployment worker=paedelm/multiworker:$SHA
+kubectl set image deployments/client-deployment client=paedelm/multi-client:$SHA
+kubectl set image deployments/server-deployment server=paedelm/multi-server:$SHA
+kubectl set image deployments/worker-deployment worker=paedelm/multi-worker:$SHA
