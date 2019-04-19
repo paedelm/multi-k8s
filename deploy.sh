@@ -10,10 +10,6 @@ docker push paedelm/multi-client:$SHA
 docker push paedelm/multi-server:$SHA
 docker push paedelm/multi-worker:$SHA
 
-docker push paedelm/multi-client:d8adb24a94558d9d593bd93c536756e928d84c86
-docker push paedelm/multi-server:d8adb24a94558d9d593bd93c536756e928d84c86
-docker push paedelm/multi-worker:d8adb24a94558d9d593bd93c536756e928d84c86
-
 kubectl apply -f k8s
 
 kubectl set image deployments/client-deployment client=paedelm/multiclient:$SHA
