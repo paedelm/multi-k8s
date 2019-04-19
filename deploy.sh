@@ -15,3 +15,7 @@ kubectl apply -f k8s
 kubectl set image deployments/client-deployment client=paedelm/multiclient:$SHA
 kubectl set image deployments/server-deployment server=paedelm/multiserver:$SHA
 kubectl set image deployments/worker-deployment worker=paedelm/multiworker:$SHA
+
+kubectl set image deployments/client-deployment client=paedelm/multiclient:d8adb24a94558d9d593bd93c536756e928d84c86
+kubectl set image deployments/server-deployment server=paedelm/multiserver:d8adb24a94558d9d593bd93c536756e928d84c86
+kubectl set image deployments/worker-deployment worker=paedelm/multiworker:d8adb24a94558d9d593bd93c536756e928d84c86

@@ -18,3 +18,5 @@ helm install stable/nginx-ingress --name my-nginx
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/provider/baremetal/service-nodeport.yaml
 
 kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx --watch
+paedelm/multiclient:d8adb24a94558d9d593bd93c536756e928d84c86
+                    d8adb24a94558d9d593bd93c536756e928d84c86
