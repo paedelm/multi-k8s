@@ -37,7 +37,7 @@ const redisPublisher = redisClient.duplicate();
 
 app.get('/', (req, res) => {
     console.log('originalUrl:'+req.originalUrl);
-    res.send('Hi');
+    res.send('Hi from '+ req.originalUrl);
 });
 
 app.get('/values/all', async (req, res) => {
